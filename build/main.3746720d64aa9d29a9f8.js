@@ -38207,7 +38207,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/index.scss");
 /* harmony import */ var _components_pages_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/pages/AboutPage/AboutPage */ "./src/components/pages/AboutPage/AboutPage.tsx");
-/* harmony import */ var _components_pages_MaintPage_MainPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/pages/MaintPage/MainPage */ "./src/components/pages/MaintPage/MainPage.tsx");
+/* harmony import */ var _components_pages_MaintPage_MainPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/pages/MainPage/MainPage */ "./src/components/pages/MaintPage/MainPage.tsx");
 var __assign = (undefined && undefined.__assign) || function () {
     __assign = Object.assign || function(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -38255,7 +38255,7 @@ var AboutPage = function () {
 
 /***/ "./src/components/pages/MaintPage/MainPage.tsx":
 /*!*****************************************************!*\
-  !*** ./src/components/pages/MaintPage/MainPage.tsx ***!
+  !*** ./src/components/pages/MainPage/MainPage.tsx ***!
   \*****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
