@@ -2,6 +2,7 @@ import { configureStore, ReducersMapObject } from '@reduxjs/toolkit';
 import { counterReducer } from 'entities/Counter';
 import { userReducer } from 'entities/User';
 import { $api } from 'shared/api/api';
+
 import { NavigateOptions } from 'react-router';
 import { CombinedState, Reducer } from 'redux';
 import { To } from 'react-router-dom';

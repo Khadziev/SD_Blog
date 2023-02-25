@@ -7,7 +7,6 @@ import {
 import { CombinedState, Dispatch } from 'redux';
 import { ProfileSchema } from 'entities/Profile';
 import { AxiosInstance } from 'axios';
-
 import { NavigateOptions } from 'react-router';
 import { AppDispatch } from 'app/providers/StoreProvider';
 import { To } from 'react-router-dom';
