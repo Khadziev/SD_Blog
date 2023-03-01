@@ -102,6 +102,30 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "aasdadas",
+      "id": "NT10-uI"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "commm",
+      "id": "QJTvlO0"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "dadasa",
+      "id": "JgMRi90"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "adasqwqqwe",
+      "id": "PYKXD4v"
     }
   ],
   "users": [
@@ -120,14 +144,28 @@
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY7H_J3UUxzlmEYMkmmks1Emd_8i3EJFGENA&usqp=CAU"
     }
   ],
-  "profile": {
-    "first": "jgh",
-    "lastname": "asf",
-    "age": 465,
-    "currency": "RUB",
-    "country": "Belarus",
-    "city": "Moscow",
-    "username": "admin213",
-    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY7H_J3UUxzlmEYMkmmks1Emd_8i3EJFGENA&usqp=CAU"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Islam222",
+      "lastname": "asf",
+      "age": 465,
+      "currency": "RUB",
+      "country": "Belarus",
+      "city": "Moscow",
+      "username": "admin213",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY7H_J3UUxzlmEYMkmmks1Emd_8i3EJFGENA&usqp=CAU"
+    },
+    {
+      "id": "2",
+      "first": "Haz",
+      "lastname": "asf",
+      "age": 465,
+      "currency": "RUB",
+      "country": "Belarus",
+      "city": "Moscow",
+      "username": "Add12",
+      "avatar": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png"
+    }
+  ]
 }
