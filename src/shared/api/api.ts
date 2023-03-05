@@ -7,3 +7,14 @@ export const $api = axios.create({
         authorization: localStorage.getItem(USER_LOCALSTORAGE_KEY) || '',
     },
 });
+
+// export const $api = axios.create({
+//     baseURL: __API__,
+// });
+//
+// $api.interceptors.request.use((config) => {
+//     if (config.headers) {
+//         config.headers.Authorization = localStorage.getItem(USER_LOCALSTORAGE_KEY) || '';
+//     }
+//     return config;
+// });
