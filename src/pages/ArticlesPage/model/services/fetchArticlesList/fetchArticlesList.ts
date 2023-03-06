@@ -1,17 +1,18 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { ThunkConfig } from 'app/providers/StoreProvider';
-import { Comment } from 'entities/Comment';
 import { Article, ArticleType } from 'entities/Article';
-import { useSelector } from 'react-redux';
 import { addQueryParams } from 'shared/lib/url/addQueryParams/addQueryParams';
 import {
-    getArticlesPageLimit, getArticlesPageNum,
-    getArticlesPageOrder, getArticlesPageSearch,
-    getArticlesPageSort, getArticlesPageType,
+    getArticlesPageLimit,
+    getArticlesPageNum,
+    getArticlesPageOrder,
+    getArticlesPageSearch,
+    getArticlesPageSort,
+    getArticlesPageType,
 } from '../../selectors/articlesPageSelectors';
 
 interface FetchArticlesListProps {
-    replace?:boolean
+    replace?: boolean;
 }
 
 export const fetchArticlesList = createAsyncThunk<
@@ -22,7 +23,6 @@ export const fetchArticlesList = createAsyncThunk<
         'articlesPage/fetchArticlesList',
         async (props, thunkApi) => {
             const { extra, rejectWithValue, getState } = thunkApi;
-
             const limit = getArticlesPageLimit(getState());
             const sort = getArticlesPageSort(getState());
             const order = getArticlesPageOrder(getState());
@@ -31,7 +31,6 @@ export const fetchArticlesList = createAsyncThunk<
             const type = getArticlesPageType(getState());
 
             try {
-                // window.history.pushState(null, '', `?search=${search}`);
                 addQueryParams({
                     sort, order, search, type,
                 });

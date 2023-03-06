@@ -14,13 +14,13 @@ interface ArticleSortSelectorProps {
     onChangeSort: (newSort: ArticleSortField) => void;
 }
 
-export const ArticleSortSelector = memo((props : ArticleSortSelectorProps) => {
+export const ArticleSortSelector = memo((props: ArticleSortSelectorProps) => {
     const {
-        className, onChangeSort, sort, onChangeOrder, order,
+        className, onChangeOrder, onChangeSort, order, sort,
     } = props;
     const { t } = useTranslation();
 
-    const orderOptions = useMemo<SelectOption<SortOrder>[]>(() => [
+    const orderOptions = useMemo<SelectOption[]>(() => [
         {
             value: 'asc',
             content: t('возрастанию'),
@@ -31,7 +31,7 @@ export const ArticleSortSelector = memo((props : ArticleSortSelectorProps) => {
         },
     ], [t]);
 
-    const sortFieldOptions = useMemo<SelectOption<ArticleSortField>[]>(() => [
+    const sortFieldOptions = useMemo<SelectOption[]>(() => [
         {
             value: ArticleSortField.CREATED,
             content: t('дате создания'),
@@ -46,19 +46,27 @@ export const ArticleSortSelector = memo((props : ArticleSortSelectorProps) => {
         },
     ], [t]);
 
+    const changeSortHandler = useCallback((newSort: string) => {
+        onChangeSort(newSort as ArticleSortField);
+    }, [onChangeSort]);
+
+    const changeOrderHandler = useCallback((newOrder: string) => {
+        onChangeOrder(newOrder as SortOrder);
+    }, [onChangeOrder]);
+
     return (
         <div className={classNames(cls.ArticleSortSelector, {}, [className])}>
             <Select
                 options={sortFieldOptions}
-                label={t('Сортировка ПО')}
+                label={t('Сортировать ПО')}
                 value={sort}
-                onChange={onChangeSort}
+                onChange={changeSortHandler}
             />
             <Select
                 options={orderOptions}
                 label={t('по')}
                 value={order}
-                onChange={onChangeOrder}
+                onChange={changeOrderHandler}
                 className={cls.order}
             />
         </div>

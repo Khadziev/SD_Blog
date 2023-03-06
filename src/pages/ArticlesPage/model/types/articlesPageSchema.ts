@@ -8,17 +8,16 @@ export interface ArticlesPageSchema extends EntityState<Article> {
     isLoading?: boolean;
     error?: string;
 
-    // пигигация
-    page:number,
-    limit:number,
-    hasMore:boolean,
-
-    //   фильтрация
+    // pagination
+    page: number;
+    limit: number;
+    hasMore: boolean;
+    // filters
     view: ArticleView;
-    order: SortOrder
+    order: SortOrder;
     sort: ArticleSortField;
     search: string;
-    type: ArticleType
+    type: ArticleType;
 
     _inited: boolean;
 }

@@ -94,13 +94,13 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
         content = (
             <Text
                 align={TextAlign.CENTER}
-                title={t('Произошла ошибка при загрузке статьи')}
+                title={t('Произошла ошибка при загрузке статьи.')}
             />
         );
     } else {
         content = (
             <>
-                <HStack gap="8" max className={cls.avatarWrapper}>
+                <HStack justify="center" max className={cls.avatarWrapper}>
                     <Avatar
                         size={200}
                         src={article?.img}
