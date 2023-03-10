@@ -1,13 +1,13 @@
 import { Country } from '@/entities/Country';
 import { Currency } from '@/entities/Currency';
-import { ValidateProfileError } from '@/features/editableProfileCard/model/consts/consts';
+import { ValidateProfileError } from '../../consts/consts';
 import { validateProfileData } from './validateProfileData';
 
 const data = {
     username: 'admin',
     age: 22,
     country: Country.Ukraine,
-    lastname: 'ulbi tv',
+    lastname: 'Asddas',
     first: 'asd',
     city: 'asf',
     currency: Currency.USD,
