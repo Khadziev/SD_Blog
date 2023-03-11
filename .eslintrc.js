@@ -71,6 +71,13 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'haz/path-checker': ['error', { alias: '@' }],
+        'haz/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+            },
+        ],
         'haz/public-api-imports': [
             'error',
             {
