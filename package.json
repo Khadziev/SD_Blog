@@ -61,6 +61,7 @@
     "@types/webpack-bundle-analyzer": "^4.4.1",
     "@types/webpack-dev-server": "^4.7.2",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "@typescript-eslint/parser": "^5.12.1",
     "@vitejs/plugin-react": "^2.1.0",
     "babel-loader": "^8.2.3",
