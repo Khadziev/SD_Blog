@@ -41,7 +41,7 @@ Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({
             username: 'admin',
             age: 22,
             country: Country.Ukraine,
-            lastname: 'ulbi tv',
+            lastname: 'asdada',
             first: 'asd',
             city: 'asf',
             currency: Currency.USD,

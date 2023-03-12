@@ -1,10 +1,5 @@
 {
-  "": "",
-  "A": "A",
-  "ADMIN": "ADMIN",
-  "ASJKDSA": "kdklasdlas",
-  "Shop": "Shop",
-  "Ulbi TV App": "Ulbi TV App",
+  "ADMIN": "Admin",
   "decrement": "decrement",
   "increment": "increment",
   "throw error": "throw error",
@@ -81,7 +76,5 @@
   "названию": "названию",
   "по": "по",
   "просмотрам": "просмотрам",
-  "убыванию": "убыванию",
-  "Internet Shop Projects - Behance": "Internet Shop Projects - Behance",
-  "Internet Shop": "Internet Shop"
+  "убыванию": "убыванию"
 }
