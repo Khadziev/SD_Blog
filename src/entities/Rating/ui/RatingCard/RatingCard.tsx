@@ -31,6 +31,7 @@ export const RatingCard = memo((props: RatingCardProps) => {
         rate = 0,
     } = props;
     const { t } = useTranslation();
+
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [starsCount, setStarsCount] = useState(rate);
     const [feedback, setFeedback] = useState('');
